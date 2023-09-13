@@ -7,8 +7,8 @@ ARG ap_user_password
 
 # 使用 ENV 抓取 ARG
 # ARG 的值：透過 build.sh --build-arg 中傳入
-ENV ap_user=${ap_user:-nanshanuser}
-ENV ap_group=${ap_group:-nanshangrp}
+ENV ap_user=${ap_user:-nanshan_user}
+ENV ap_group=${ap_group:-nanshan_grp}
 ENV root_passwd=${root_passwd:-1qaz@WSX}
 ENV ap_user_password=${ap_user_password:-1qaz@WSX}
 

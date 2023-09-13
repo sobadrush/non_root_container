@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Please enter image build-arg:"
+echo "---------------------------------------"
 read -p 'ap_user: ' AP_USER
 read -p 'ap_group: ' AP_GROUP
 read -s -p 'root_passwd: ' ROOT_PASSOWRD
@@ -19,8 +20,8 @@ if [ -z "$IMG_VER" ]; then
 fi
 
 echo "---------------------------------------"
-if [ -n "$AP_USER" ]; then echo "ap_user: $AP_USER"; else echo "ap_user: nanshanuser"; fi
-if [ -n "$AP_GROUP" ]; then echo "ap_group: $AP_GROUP"; else echo "ap_group: nanshangrp"; fi
+if [ -n "$AP_USER" ]; then echo "ap_user: $AP_USER"; else echo "ap_user: nanshan_user"; fi
+if [ -n "$AP_GROUP" ]; then echo "ap_group: $AP_GROUP"; else echo "ap_group: nanshan_grp"; fi
 if [ -n "$ROOT_PASSOWRD" ]; then echo "root_passwd: $ROOT_PASSOWRD"; else echo "root_passwd: 1qaz@WSX"; fi
 if [ -n "$AP_USER_PASSWORD" ]; then echo "ap_user_password: $AP_USER_PASSWORD"; else echo "ap_user_password: 1qaz@WSX"; fi
 echo "version: " $IMG_VER
